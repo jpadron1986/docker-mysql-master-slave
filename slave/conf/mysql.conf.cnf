@@ -1,5 +1,9 @@
 [mysqld]
-
+log_bin_trust_function_creators = 1
+sql_mode=""
+interactive_timeout = 600
+wait_timeout=600
+log-error       = /var/log/mysql/error.log
 skip-host-cache
 skip-name-resolve
 
